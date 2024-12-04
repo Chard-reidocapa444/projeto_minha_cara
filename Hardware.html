@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware - Peças de PC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Hardware.css" />
+  </head>
+
+  <body class="light">
+    <!-- Barra RGB -->
+    <div class="rgb-bar"></div>
+    <div class="rgb-bar"></div>
+
+    <img src="images/Hardwarefundo.gif" alt="Fundo GIF" class="video-bg" />
+
+    <!-- Título do site -->
+    <header class="site-title">
+      <h1>Hardware</h1>
+    </header>
+
+    <!-- Barra RGB -->
+    <div class="rgb-bar"></div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Perifericos.html">Periféricos</a></li>
+      </ul>
+
+      <button id="theme-toggle" class="theme-toggle">
+        <i id="theme-icon" class="bi bi-moon"></i>
+      </button>
+    </nav>
+
+    <!-- Containers de Hardware -->
+    <div class="hardware-containers">
+      <div class="hardware-container" onclick="window.location.href='processador.html';">
+        <img src="images/AMD Ryzen 9 7950.jpg" alt="Processador" />
+        <h3>Processador</h3>
+        <p>
+          Componente essencial para o processamento de dados e execução de
+          instruções no seu PC.
+        </p>
+      </div>
+      <div class="hardware-container" onclick="window.location.href='placa-de-video.html';">
+        <img src="images/RTX4090.jpg" alt="Placa de Vídeo" />
+        <h3>Placa de Vídeo</h3>
+        <p>Responsável por renderizar gráficos e imagens no seu monitor.</p>
+      </div>
+      <div class="hardware-container" onclick="window.location.href='memoria-ram.html';">
+        <img src="images/MemoriaRam.jpg" alt="Memória RAM" />
+        <h3>Memória RAM</h3>
+        <p>
+          Memória temporária que armazena dados de forma rápida para melhorar o
+          desempenho do PC.
+        </p>
+      </div>
+      <div class="hardware-container" onclick="window.location.href='ventoinha.html';">
+        <img src="images/fan bonita.jpg" alt="Ventoinha" />
+        <h3>Ventoinha</h3>
+        <p>
+          Ajuda a manter a temperatura do computador controlada, evitando o
+          superaquecimento.
+        </p>
+      </div>
+      <div class="hardware-container" onclick="window.location.href='placa-mae.html';">
+        <img src="images/PlacaMae.jpg" alt="Placa Mãe" />
+        <h3>Placa Mãe</h3>
+        <p>
+          Componente que conecta todos os outros, permitindo a comunicação entre
+          eles.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js/darkmode.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section company-info">
+            <h3>GamesX</h3>
+            <p>
+              Comprometida com a inovação e a excelência para atender às suas
+              necessidades.
+            </p>
+            <p><i class="bi bi-geo-alt"></i> Rua Exemplo, 123, Centro, São Paulo - SP</p>
+            <p><i class="bi bi-telephone"></i> (11) 98765-4321</p>
+            <p><i class="bi bi-envelope"></i> contato@gamesx.com.br</p>
+          </div>
+          <div class="footer-section links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="footer-section social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 GamesX. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+  </body>
+</html>

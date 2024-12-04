@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.site-title {
+    background-color: rgba(40, 44, 52, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 60, 60, 0.8);
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav a:hover {
+    color: #ffcc00;
+}
+
+.theme-toggle {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.peripherals-containers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.peripheral-container {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.peripheral-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.peripheral-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.peripheral-container h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.peripheral-container p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+.rgb-bar {
+    position: absolute;
+  
+    left: 0;
+    width: 100%;
+    height: 5px; 
+    z-index: 9999;
+    animation: changeColors 3s infinite alternate; 
+  }
+  
+  .rgb-bar:nth-of-type(1) {
+    top: 1px; /* Primeira barra */
+  }
+  
+  /* Barra RGB 2 */
+  .rgb-bar:nth-of-type(2) {
+    top: 1000px; 
+  }
+  
+  
+  
+  @keyframes changeColors {
+    0% {
+      background-color: #ff0000; /* Vermelho */
+    }
+    25% {
+      background-color: #00ff00; /* Verde */
+    }
+    50% {
+      background-color: #0000ff; /* Azul */
+    }
+    75% {
+      background-color: #ff00ff; /* Magenta */
+    }
+    100% {
+      background-color: #ffff00; /* Amarelo */
+    }
+  }
